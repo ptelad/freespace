@@ -55,19 +55,15 @@ exports.check = function(driveOrMount, callback) {
 
 exports.checkSync = function(driveOrMount) {
     let output;
-    let stderr = new Buffer(16);
-    let options = {
-        stdio: ['pipe', 'pipe', stderr]
-    };
 
     if (!driveOrMountRegex.test(driveOrMount)) {
         throw new Error(DRIVE_STRING_ERROR);
     }
     if (process.platform === 'win32') {
         driveOrMount = driveOrMount.charAt(0).toLowerCase();
-        output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, options);
+        output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});
     } else {
-        output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, options);
+        output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});
     }
 
     if (output.length === 0) {
