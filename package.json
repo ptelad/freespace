@@ -1,0 +1,28 @@
+{
+  "name": "@ekolabs/freespace",
+  "version": "1.0.0",
+  "description": "A library that tells you how much free disk space you have",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptelad/freespace.git"
+  },
+  "author": {
+    "name": "Eko labs",
+    "url": "https://developer.helloeko.com",
+    "email": "dev@helloeko.com"
+  },
+  "contributors": [
+    {
+      "name": "Elad Gil"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ptelad/freespace/issues"
+  },
+  "homepage": "https://github.com/ptelad/freespace#readme"
+}
