@@ -1,6 +1,7 @@
 # freespace README #
-A library that tells you how much free space you have on all platform.
-No dependencies and no native libraries.
+A library that tells you how much free disk space you have.
+* Works on all platform.
+* No dependencies and no native libraries.
 
 ## How do I get set up?
 
