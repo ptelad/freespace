@@ -9,14 +9,14 @@ A library that tells you how much free disk space you have.
 
 ## API
 
-### check(driveOrMount, callback)
+### check(driveOrMount, [callback])
 
 #### driveOrMount
 Type `String`
 
 The drive letter (for window) or mount point (for *nix) you want to check
 
-#### callback
+#### callback - optional
 Type `function`
 
 callback function with signture `function(err, bytes)`
