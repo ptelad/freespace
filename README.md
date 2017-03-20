@@ -5,7 +5,7 @@ A library that tells you how much free disk space you have.
 
 ## How do I get set up?
 
-`npm install --save @helloeko/freespace`
+`npm install --save @ekolabs/freespace`
 
 ## API
 
