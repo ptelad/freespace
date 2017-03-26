@@ -4,7 +4,7 @@
   "description": "A library that tells you how much free disk space you have",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/ptelad/freespace/issues"
   },
-  "homepage": "https://github.com/ptelad/freespace#readme"
+  "homepage": "https://github.com/ptelad/freespace#readme",
+  "devDependencies": {
+    "ava": "^0.18.2"
+  }
 }
