@@ -42,7 +42,7 @@ The drive letter (for window) or mount point (for *nix) you want to check
 ## Usage
 
 ````
-const freespace = require('@ekolable/freespace');
+const freespace = require('freespace');
 
 freespace.check('/')
 .then(bytes => {
