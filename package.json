@@ -1,6 +1,6 @@
 {
   "name": "freespace",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library that tells you how much free disk space you have",
   "main": "index.js",
   "scripts": {
