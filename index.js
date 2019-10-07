@@ -4,7 +4,7 @@
 'use strict';
 
 const cp = require('child_process');
-const driveOrMountRegex = /(^[a-zA-Z]$|^\/.*)/;
+const driveOrMountRegex = /(^[a-zA-Z]|^\/).*/;
 const DRIVE_STRING_ERROR = 'driveOrMount is invalid';
 
 function getBytesFromOutput(output) {
