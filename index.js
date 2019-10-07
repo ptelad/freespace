@@ -11,7 +11,8 @@ function getBytesFromOutput(output) {
     let bytes;
 
     if (process.platform === 'win32') {
-        output = /avail free bytes\s*:\s*(\d*)/.exec(output.toString())[1];
+        output = /(quota|avail) free bytes\s*:\s*([\d,]*)/.exec(output.toString())[2];
+        output = output.replace(/,/g, '');
         bytes = parseInt(output);
     } else {
         output = output.toString();
